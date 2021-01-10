@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  nodeweb:
+    build: ./dockerfiles/nodeweb
+    volumes:
+      - ./code:/code
+    command: >
+      sh -c "npm run nodemon"
+    ports: 
+      - "8000"
+    network_mode: "host"
