@@ -1,0 +1,10 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}
