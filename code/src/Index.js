@@ -9,3 +9,8 @@ app.get('/vue', (req, res) => res.send('Express + TypeScript Server\n'));
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
 });
+
+/**
+ * @type {(x: number, y: number) => number}
+ */
+const x = function(x, y) { return x + y }
